@@ -5,11 +5,8 @@ import '../../constants/style.dart';
 import 'custom_text.dart';
 
 class HorizontalMenuItem extends StatelessWidget {
-  const HorizontalMenuItem({ 
-    Key? key, 
-    required this.itemName, 
-    required this.onTap 
-  }) : super(key: key);
+  const HorizontalMenuItem(
+      {super.key, required this.itemName, required this.onTap});
 
   final String itemName;
   final VoidCallback onTap;
@@ -19,49 +16,53 @@ class HorizontalMenuItem extends StatelessWidget {
     double width = MediaQuery.of(context).size.width;
 
     return InkWell(
-              onTap: onTap,
-              onHover: (value){ value ?
-                menuController.onHover(itemName) : 
-                menuController.onHover("not hovering");
-              },
-              child: Obx(() => Container(
-              color: menuController.isHovering(itemName) ? 
-                lightGray.withOpacity(.1) : Colors.transparent,
+        onTap: onTap,
+        onHover: (value) {
+          value
+              ? menuController.onHover(itemName)
+              : menuController.onHover("not hovering");
+        },
+        child: Obx(() => Container(
+              color: menuController.isHovering(itemName)
+                  ? lightGray.withOpacity(.1)
+                  : Colors.transparent,
               child: Row(
-                      children: [
-                        Visibility(
-                          visible: menuController.isHovering(itemName) || 
-                                   menuController.isActive(itemName),
-                          maintainSize: true,
-                          maintainAnimation: true,
-                          maintainState: true,
-                          child: Container(
-                            width: 6,
-                            height: 40,
-                            color: dark,
-                          ),
-                        ),
-                       SizedBox(width:width / 88),
-                       Padding(
-                        padding: const EdgeInsets.all(16),
-                        child: menuController.returnIconFor(itemName),
-                       ),
-                      if(!menuController.isActive(itemName))
-                      Flexible(child: CustomText(
-                        text: itemName , 
-                        color: menuController.isHovering(itemName) ? 
-                        dark : lightGray,
-                      ))
-                      else
-                        Flexible(child: CustomText(
-                          text: itemName , 
-                          color:  dark , 
-                          size: 18, 
-                          weight: FontWeight.bold,
-                      ))
-                      ],
+                children: [
+                  Visibility(
+                    visible: menuController.isHovering(itemName) ||
+                        menuController.isActive(itemName),
+                    maintainSize: true,
+                    maintainAnimation: true,
+                    maintainState: true,
+                    child: Container(
+                      width: 6,
+                      height: 40,
+                      color: dark,
                     ),
-                  ))
-                );
+                  ),
+                  SizedBox(width: width / 88),
+                  Padding(
+                    padding: const EdgeInsets.all(16),
+                    child: menuController.returnIconFor(itemName),
+                  ),
+                  if (!menuController.isActive(itemName))
+                    Flexible(
+                        child: CustomText(
+                      text: itemName,
+                      color: menuController.isHovering(itemName)
+                          ? dark
+                          : lightGray,
+                    ))
+                  else
+                    Flexible(
+                        child: CustomText(
+                      text: itemName,
+                      color: dark,
+                      size: 18,
+                      weight: FontWeight.bold,
+                    ))
+                ],
+              ),
+            )));
   }
 }

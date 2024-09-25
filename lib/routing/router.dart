@@ -1,22 +1,27 @@
-import '../pages/products/products.dart';
-import '../routing/app_pages.dart';
-import '../routing/menu_items.dart';
 import 'package:flutter/material.dart';
-import '../pages/authentication/authentication.dart';
-import '../pages/record/recorder.dart';
+import 'package:x51/auth/presentation/screens/auth_screen.dart';
+import 'package:x51/pages/organizations/organizations_list.dart';
+import 'package:x51/pages/quill/QuillEditorExample.dart';
+import 'package:x51/pages/settings/admin_users_page.dart';
 import '../pages/record/ambient_recorder.dart';
-import '../pages/users/users.dart';
+import '../pages/transcripts/TranscriptPage.dart';
+import '../pages/users/users_page.dart';
+import '../routing/app_pages.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
     case AppRoutes.recordPageRoute:
       return getPageRoute(AmbientRecorder(onStop: (String path) {  },));
-    case AppRoutes.recordingsPageRoute:
-      return getPageRoute(const ProductsPage());
+    case AppRoutes.organizationsPageRoute:
+      return getPageRoute(const OrganizationsPage());
     case AppRoutes.usersPageRoute:
       return getPageRoute(const UsersPage());
+    case AppRoutes.transcriptsRoute:
+      return getPageRoute(const TranscriptPage());
     case AppRoutes.authenticationPageRoute:
-      return getPageRoute(const AuthenticationPage());
+      return getPageRoute(const AuthScreen());
+      case AppRoutes.adminUserRight:
+      return getPageRoute(const AdminUsersPage());
     default:
       return getPageRoute(AmbientRecorder(onStop: (String path) {  },));
   }

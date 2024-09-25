@@ -1,8 +1,11 @@
-class Constants{
+import 'package:x51/models/user_model.dart';
 
-  static const String customersUrl = "https://jsonplaceholder.typicode.com/users";
+class Constants {
+  static const String customersUrl =
+      "https://jsonplaceholder.typicode.com/users";
   static const String productsUrl = "https://dummyjson.com/products";
-  static const String localHost = "https://heroic-achievement-production.up.railway.app";
+  static const String localHost =
+      "https://heroic-achievement-production.up.railway.app";
 
   static const String totalStock = "Total stock of products:";
   static const String valueOfStock = "Value of stock:";
@@ -17,4 +20,18 @@ class Constants{
 
   static const String cookieName = "jwt";
 
+  // Preferences
+  static const String prefUserAuthenticated = "prefUserAuthenticated";
+  static const String prefRegisteredUserSet = "prefRegisteredUserSet";
+  static const String prefFirstName = "prefFirstName";
+  static const String prefLastName = "prefLastName";
+
+  // Firebase Constants
+  static const String usersCollection = "users";
+
+  // static const String superAdminEmail = "bode@reapsunllc.com";
+  static const String superAdminEmail = "bode@gmail.com";
+
+  // Static Constants
+  static UserModel userModel = UserModel.emptyUser();
 }

@@ -61,6 +61,14 @@ dependencies:
   fluttertoast: ^8.2.8
   file_saver: ^0.2.14
   cloud_firestore: ^5.4.2
+  flutter_riverpod: ^2.3.7
+  expandable_datatable: ^0.0.7
+  faker: ^2.0.0
+  uuid: ^4.0.0
+  flutter_quill: ^9.3.2
+  flutter_html: ^3.0.0-beta.2
+  quill_html_editor: ^2.2.8
+  html: ^0.15.0
 
 dev_dependencies:
   flutter_test:

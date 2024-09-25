@@ -35,7 +35,7 @@ class _ProductsTableState extends State<ProductsTable> {
     final DataTableSource data = MyData();
 
     return Obx(() => Padding(
-        padding: const EdgeInsets.all(16),
+          padding: const EdgeInsets.all(16),
           child: productsController.products.isEmpty
               ? const Center(child: CircularProgressIndicator())
               : PaginatedDataTable(

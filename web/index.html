@@ -83,5 +83,24 @@
     firebase.firestore().settings({ experimentalForceLongPolling: true })
 </script>
 <script src="main.dart.js" type="application/javascript"></script>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyDDlplYWYIbycuknCfOV9tHmTz7pt3W0iA",
+      authDomain: "x51-425623.firebaseapp.com",
+      projectId: "x51-425623",
+      storageBucket: "x51-425623.firebasestorage.app",
+      messagingSenderId: "625779460700",
+      appId: "1:625779460700:web:db7d0f17f97477297eb499"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+</script>
 </body>
 </html>

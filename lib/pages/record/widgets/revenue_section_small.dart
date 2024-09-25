@@ -1,3 +1,5 @@
+import 'package:x51/pages/record/widgets/revenue_info.dart';
+
 import 'pages/record/widgets/revenue_info.dart';
 import 'package:flutter/material.dart';
 import 'constants/style.dart';

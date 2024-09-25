@@ -1,4 +1,5 @@
-import '../pages/authentication/authentication.dart';
+import 'package:x51/auth/presentation/screens/auth_screen.dart';
+
 import '../routing/menu_items.dart';
 import 'package:flutter/animation.dart';
 import 'package:get/get.dart';
@@ -17,7 +18,7 @@ abstract class AppPages {
     ),
     GetPage(
       name: AppRoutes.authenticationPageRoute,
-      page: () => const AuthenticationPage(),
+      page: () => const AuthScreen(),
       transitionDuration: const Duration(milliseconds: 500),
       curve: Curves.easeOut,
       transition: Transition.fadeIn
@@ -29,10 +30,14 @@ abstract class AppRoutes {
   static const homeRoute = "/home";
   static const recordDisplayName = "Ambient Recording";
   static const recordPageRoute = "/ambientRecording";
-  static const myRecordingsDisplayName = "My Recordings";
-  static const recordingsPageRoute = "/recordings";
+  static const myRecordingsDisplayName = "Organizations";
+  static const organizationsPageRoute = "/organizations";
   static const usersPageDisplayName = "Users";
   static const usersPageRoute = "/users";
+  static const transcriptsName = "Transcripts";
+  static const transcriptsRoute = "/transcripts";
+  static const adminUserRightDisplayName = "Admin User Rights";
+  static const adminUserRight = "/adminUserRights";
   static const authenticationDisplayName = "Log Out";
   static const authenticationPageRoute = "/auth";
 }

@@ -38,7 +38,16 @@ class Utils {
     Get.snackbar(title, message);
   }
 
-  static showCustomSnackBar(BuildContext? context, String message, {MaterialAccentColor backgroundColor = Colors.greenAccent}) {
+  static showSuccessSnackBar(String message) {
+    Utils.showCustomSnackBar(Get.context, message);
+  }
+
+  static showErrorSnackBar(String message) {
+    Utils.showCustomSnackBar(Get.context, message, backgroundColor: Colors.red);
+  }
+
+  static showCustomSnackBar(BuildContext? context, String message,
+      {MaterialColor backgroundColor = Colors.green}) {
     var snackBar = SnackBar(
         width: 500,
         padding: const EdgeInsets.all(10),

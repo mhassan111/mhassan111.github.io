@@ -25,7 +25,7 @@ class MenuController extends GetxController {
       case AppRoutes.recordDisplayName:
         return customIcon(Icons.mic, itemName);
       case AppRoutes.myRecordingsDisplayName:
-        return customIcon(Icons.headset_mic, itemName);
+        return customIcon(Icons.place_rounded, itemName);
       case AppRoutes.usersPageDisplayName:
         return customIcon(Icons.person, itemName);
       case AppRoutes.authenticationDisplayName:

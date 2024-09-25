@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "980088464943",
-    "project_id": "medtranscript-60b92",
-    "storage_bucket": "medtranscript-60b92.appspot.com"
+    "project_number": "625779460700",
+    "project_id": "x51-425623",
+    "storage_bucket": "x51-425623.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:980088464943:android:b52b061f339c956c3508da",
+        "mobilesdk_app_id": "1:625779460700:android:03adbbc2730e495a7eb499",
         "android_client_info": {
           "package_name": "com.med.transcript"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyArIzN0W6uwhosYXkyv8UO3MFU-YhUSsqk"
+          "current_key": "AIzaSyBqOQXTs1iOQgN5wBcWo8C7kzNmSvR7iYE"
         }
       ],
       "services": {

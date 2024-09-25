@@ -7,6 +7,6 @@ import 'package:flutter/material.dart';
 
 Navigator localNavigator() => Navigator(
       key: navigationController.navigatorKey,
-      initialRoute: AppRoutes.recordingsPageRoute,
+      initialRoute: AppRoutes.recordPageRoute,
       onGenerateRoute: generateRoute
 );
