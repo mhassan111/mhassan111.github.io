@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "980088464943",
+    "project_id": "medtranscript-60b92",
+    "storage_bucket": "medtranscript-60b92.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:980088464943:android:b52b061f339c956c3508da",
+        "android_client_info": {
+          "package_name": "com.med.transcript"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArIzN0W6uwhosYXkyv8UO3MFU-YhUSsqk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
